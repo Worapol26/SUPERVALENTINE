@@ -1,0 +1,55 @@
+<ion-content [fullscreen]="true" color="pink2">
+
+
+  <ion-button shape="round" size="large" style="margin-left: 125px; margin-top: 10px;" color="cream">
+    ประเภทสินค้า
+  </ion-button>
+
+
+<div class="button-container">
+  <ion-button color="cream" (click)="goToSinka()" class="custom-button">
+    <img src="../../assets/pngtree-vector-water-bottle-icon-png-image_872322.png" style="margin-right: 20px;">
+    <br>
+    <ion-label>
+      เครื่องดื่ม
+    </ion-label>
+  </ion-button>
+
+  <ion-button color="cream"  (click)="goToSink2()" class="custom-button">
+
+    <img src="../../assets/pngtree-hand-drawn-cartoon-snack-potato-chips-png-image_4289592_1.png" style="margin-right: 50px;">
+    <br>
+    <ion-label>
+      ขนม
+    </ion-label>
+  </ion-button>
+
+  <ion-button color="cream"  (click)="goToSink3()" class="custom-button">
+    <img src="../../assets/mama.png" >
+    <br>
+    <ion-label>
+      อาหารแห้ง
+    </ion-label>
+  </ion-button>
+
+</div>
+
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="document"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="color-palette"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
