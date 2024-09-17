@@ -2,20 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-
 import { IonicModule } from '@ionic/angular';
 
-import { TakraPageRoutingModule } from './takra-routing.module';
+import { BookingFormPageRoutingModule } from './booking-form-routing.module';
 
-import { TakraPage } from './takra.page';
+import { BookingFormPage } from './booking-form.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TakraPageRoutingModule
+    BookingFormPageRoutingModule
   ],
-  declarations: [TakraPage]
+  declarations: [BookingFormPage]
 })
-export class TakraPageModule {}
+export class BookingFormPageModule {}

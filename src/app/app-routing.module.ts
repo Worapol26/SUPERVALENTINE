@@ -31,6 +31,11 @@ const routes: Routes = [
     path: 'takra',
     loadChildren: () => import('./takra/takra.module').then( m => m.TakraPageModule)
   },
+  {
+    path: 'booking-form',
+    loadChildren: () => import('./booking-form/booking-form.module').then( m => m.BookingFormPageModule)
+  },
+  
 ];
 
 @NgModule({

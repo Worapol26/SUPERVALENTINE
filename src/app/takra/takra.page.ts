@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 // สร้าง interface สำหรับสินค้าในตะกร้า
 interface CartItem {
@@ -27,7 +28,12 @@ export class TakraPage {
     return this.cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
   }
 
-  constructor(private navCtrl: NavController) {}
+  constructor(private navCtrl: NavController, private router: Router) {}
+   goToBook(){
+    this.navCtrl.navigateForward('../../')
+   }
+
+
 
   // กำหนดชนิดของ parameter product เป็น CartItem
   removeFromCart(product: CartItem) {
