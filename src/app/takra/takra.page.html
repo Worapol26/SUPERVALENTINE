@@ -42,9 +42,15 @@
           </ion-card-content>
         </ion-card>
 
-        <ion-button expand="full" color="success" (click)="goToCheckout()">
+        <ion-button id="present-alert" expand="full" color="success" >
           จองคิว
         </ion-button>
+        <ion-alert
+        trigger="present-alert"
+            header="กรุณากรอกข้อมูล"
+            [buttons]="alertButtons"
+              [inputs]="alertInputs"
+               ></ion-alert>
         
       </ion-col>
 

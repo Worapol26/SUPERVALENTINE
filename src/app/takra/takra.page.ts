@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { text } from 'ionicons/icons';
 
 // สร้าง interface สำหรับสินค้าในตะกร้า
 interface CartItem {
@@ -48,4 +49,34 @@ export class TakraPage {
       alert('ตะกร้าของคุณว่างเปล่า กรุณาเพิ่มสินค้าในตะกร้า');
     }
   }
+  public alertButtons = [{
+    
+      text: 'ยกเลิก',
+      role: 'cancel',
+      handler: () => {
+        console.log('Alert canceled');
+      },
+    },
+    {
+      text: 'ยืนยัน',
+      role: 'confirm',
+      handler: () => {
+        console.log('Alert confirmed');
+        this.router.navigate(['../../booking-form'])
+      },
+    },
+  ];
+
+  public alertInputs = [
+    {
+      placeholder: 'ชื่อ-นามสกุล',
+    },
+    {
+      placeholder: 'เบอร์โทรศัพท์',
+      attributes: {
+        maxlength: 10,
+      },
+    },
+
+  ];
 }

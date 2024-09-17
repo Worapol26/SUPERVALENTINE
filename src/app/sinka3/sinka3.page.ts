@@ -71,6 +71,24 @@ export class Sinka3Page implements OnInit {
       price: 15,
       detail: 'Mama Minced Pork Flavor',
       imageURL: '../../assets/MAMAKUNGs.png'
+    },{
+      id: 6,
+      name: 'OK มาม่ารสไข่เค็ม',
+      price: 15,
+      detail: 'Mama Minced Pork Flavor',
+      imageURL: '../../assets/OKMAMA.png'
+    },{
+      id: 6,
+      name: 'ซัมยัง มาม่าเผ็ดเกาหลี',
+      price: 15,
+      detail: 'Mama Minced Pork Flavor',
+      imageURL: '../../assets/KOREA1.png'
+    },{
+      id: 6,
+      name: 'ซัมยัง มาม่าเผ็ดเกาหลีชีส',
+      price: 15,
+      detail: 'Mama Minced Pork Flavor',
+      imageURL: '../../assets/KOREA2.png'
     },
   ]
 }

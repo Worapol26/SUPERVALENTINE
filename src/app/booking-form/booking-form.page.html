@@ -1,30 +1,28 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>กรุณากรอกข้อมูล</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content class="ion-padding">
-  <form (ngSubmit)="submitForm()">
-    <ion-item>
-      <ion-label position="floating">ชื่อ - นามสกุล</ion-label>
-      <ion-input type="text" [(ngModel)]="name" name="name"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label position="floating">เบอร์โทรศัพท์</ion-label>
-      <ion-input type="tel" [(ngModel)]="phone" name="phone"></ion-input>
-    </ion-item>
-
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-button expand="full" color="danger" (click)="cancel()">ยกเลิก</ion-button>
-        </ion-col>
-        <ion-col>
-          <ion-button expand="full" color="success" type="submit">ยืนยัน</ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </form>
+  <div class="booking-card">
+    <h2 class="booking-title">การจองคิวเสร็จสิ้น!!</h2>
+    <p class="queue-label">หมายเลขคิว</p>
+    <div class="queue-number">
+      01
+    </div>
+    <ion-button color="success" expand="full" [routerLink]="['/home']">
+      เสร็จสิ้น
+    </ion-button>
+  </div>
 </ion-content>
+
+<style>
+   ion-content {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+    height: 100vh; /* ใช้ความสูงเต็มหน้าจอ */
+  }
+  .booking-card {
+    border: 2px solid #000000; /* ขอบหนา 2px สีเขียวเข้ม */
+    border-radius: 8px; /* ทำให้ขอบมน */
+    padding: 16px; /* เพิ่มพื้นที่ขอบด้านใน */
+  }
+</style>

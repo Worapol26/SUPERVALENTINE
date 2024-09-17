@@ -35,7 +35,14 @@ const routes: Routes = [
     path: 'booking-form',
     loadChildren: () => import('./booking-form/booking-form.module').then( m => m.BookingFormPageModule)
   },
-  
+  {
+    path: 'bossmap',
+    loadChildren: () => import('./bossmap/bossmap.module').then(m => m.BossmapPageModule)
+  },
+  {
+    path: 'jaokongran',
+    loadChildren: () => import('./jaokongran/jaokongran.module').then( m => m.JaokongranPageModule)
+  }
 ];
 
 @NgModule({
