@@ -16,7 +16,7 @@
           <div class="center">
             {{product.name}} <br>
             ราคา : {{product.price}} บาท<br>
-            <ion-button style="font-size: 11px;" color="pink">
+            <ion-button style="font-size: 11px;" color="green">
               <ion-icon name="cart-outline"></ion-icon>
               เพิ่มสินค้าลงตะกร้า
             </ion-button>
@@ -29,8 +29,8 @@
           <img [src]="product.imageURL" class="img">
           <div class="center">
             {{product.name}} <br>
-            ราคา : {{product.price}} บาท<br>''
-            <ion-button style="font-size: 11px;" color="pink">
+            ราคา : {{product.price}} บาท<br>
+            <ion-button style="font-size: 11px;" color="green">
               <ion-icon name="cart-outline"></ion-icon>
               เพิ่มสินค้าลงตะกร้า
             </ion-button>
@@ -54,7 +54,7 @@
       </ion-fab-button>
 
       <ion-fab-button (click)="goToPraped()">
-        <ion-icon name="home"></ion-icon>
+        <ion-icon name="bag-handle-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab-list>
   </ion-fab>

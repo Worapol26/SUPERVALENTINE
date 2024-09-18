@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'jaokongran',
     loadChildren: () => import('./jaokongran/jaokongran.module').then( m => m.JaokongranPageModule)
+  },
+  {
+    path: 'orderlist',
+    loadChildren: () => import('./orderlist/orderlist.module').then( m => m.OrderlistPageModule)
   }
 ];
 
